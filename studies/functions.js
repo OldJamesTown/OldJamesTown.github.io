@@ -43,3 +43,19 @@
  var mySum = add(10, 15); 
  
  console.log(mySum); // gives us 25, which is now stored in the variable mySum
+ 
+ 
+/* Closures in javascript refer to the ability of functions WITHIN functions, or 
+ * nested functions, to access variables and data from it's parent scope. Closures 
+ * can make use of variables declared within itself, it's outer function, AND global
+ * variables.
+ */
+ 
+ let x =10;
+ 
+ function addY(num) {
+  let y = 5;
+  return () => x + y;  // here we have a nested anonymous function that is able
+ }                     // to utilize the variable called above in it's parent scope
+                       // AND x, which is declared globally 
+  

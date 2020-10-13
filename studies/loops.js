@@ -42,9 +42,10 @@ console.log(myInfoArray); // prints an array called myInfoArray that contains th
 //Example:
 let num = 0;
 
-while (num < 10) {
-    num += 1;
-}
+while (num < 10) {     // This is the condition. the loop will run as long as this statement is TRUE. Stops when FALSE
+    num += 1;    // The action our while loop will perform for each iteration. Typically, this should alter the variable
+}                 // or value used in the conditional statement, otherwise risk creating an infinite loop that will crash the code
+
 
 console.log(num); // prints to the console 10 because the while loop starts at 0 and adds 1 to itself over and over until num equals 10
 
